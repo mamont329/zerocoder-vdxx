@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Стили самой карточки */
+        .card {
+            background: #ffffff;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Псевдокласс hover — стили при наведении на карточку */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Стили фото */
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin: 8px 0;
+            color: #2c3e50;
+        }
+
+        .card p {
+            margin: 4px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .card .label {
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>👥 Наши пользователи</h1>
+
+    <div class="cards">
+        <div class="card">
+            <img src="Data-vd02/user1.jpg" alt="Фото пользователя">
+            <h2>Иванов Иван Иванович</h2>
+            <p><span class="label">E-mail:</span> ivanov@mail.ru</p>
+            <p><span class="label">Дата рождения:</span> 15.03.1990</p>
+            <p><span class="label">Город:</span> Москва</p>
+        </div>
+
+        <div class="card">
+            <img src="Data-vd02/user2.jpg" alt="Фото пользователя">
+            <h2>Петрова Мария Сергеевна</h2>
+            <p><span class="label">E-mail:</span> petrova@gmail.com</p>
+            <p><span class="label">Дата рождения:</span> 22.07.1988</p>
+            <p><span class="label">Город:</span> Санкт-Петербург</p>
+        </div>
+
+        <div class="card">
+            <img src="Data-vd02/user3.jpg" alt="Фото пользователя">
+            <h2>Сидоров Алексей Петрович</h2>
+            <p><span class="label">E-mail:</span> sidorov@yandex.ru</p>
+            <p><span class="label">Дата рождения:</span> 09.11.1995</p>
+            <p><span class="label">Город:</span> Казань</p>
+        </div>
+    </div>
+</body>
+</html>
